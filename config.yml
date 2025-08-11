@@ -1,9 +1,9 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main # pastikan ini sesuai dengan branch yang digunakan Netlify
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+media_folder: "static/uploads" # tempat file disimpan di repo
+public_folder: "/uploads"      # path untuk diakses di web
 
 collections:
   - name: "news"
@@ -14,7 +14,7 @@ collections:
     fields:
       - { label: "Judul", name: "title", widget: "string" }
       - { label: "Tanggal", name: "date", widget: "datetime" }
-      - { label: "Gambar Utama (path)", name: "image", widget: "image" }
+      - { label: "Gambar Utama", name: "image", widget: "image" }
       - { label: "Ringkasan", name: "summary", widget: "text" }
       - { label: "Konten", name: "body", widget: "markdown" }
 
