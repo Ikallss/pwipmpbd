@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
-  branch: main # pastikan ini sesuai dengan branch yang digunakan Netlify
+  name: "git-gateway"
+  branch: "main"
 
-media_folder: "static/uploads" # tempat file disimpan di repo
-public_folder: "/uploads"      # path untuk diakses di web
+media_folder: "static/uploads"
+public_folder: "/uploads"
 
 collections:
   - name: "news"
@@ -12,11 +12,21 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Judul", name: "title", widget: "string" }
-      - { label: "Tanggal", name: "date", widget: "datetime" }
-      - { label: "Gambar Utama", name: "image", widget: "image" }
-      - { label: "Ringkasan", name: "summary", widget: "text" }
-      - { label: "Konten", name: "body", widget: "markdown" }
+      - label: "Judul"
+        name: "title"
+        widget: "string"
+      - label: "Tanggal"
+        name: "date"
+        widget: "datetime"
+      - label: "Gambar Utama"
+        name: "image"
+        widget: "image"
+      - label: "Ringkasan"
+        name: "summary"
+        widget: "text"
+      - label: "Konten"
+        name: "body"
+        widget: "markdown"
 
   - name: "agenda"
     label: "Agenda"
@@ -24,10 +34,18 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Judul", name: "title", widget: "string" }
-      - { label: "Tanggal", name: "date", widget: "datetime" }
-      - { label: "Lokasi", name: "location", widget: "string" }
-      - { label: "Deskripsi", name: "body", widget: "markdown" }
+      - label: "Judul"
+        name: "title"
+        widget: "string"
+      - label: "Tanggal"
+        name: "date"
+        widget: "datetime"
+      - label: "Lokasi"
+        name: "location"
+        widget: "string"
+      - label: "Deskripsi"
+        name: "body"
+        widget: "markdown"
 
   - name: "gallery"
     label: "Galeri"
@@ -35,6 +53,12 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Judul / Keterangan", name: "title", widget: "string" }
-      - { label: "Gambar", name: "image", widget: "image" }
-      - { label: "Tanggal", name: "date", widget: "datetime" }
+      - label: "Judul / Keterangan"
+        name: "title"
+        widget: "string"
+      - label: "Gambar"
+        name: "image"
+        widget: "image"
+      - label: "Tanggal"
+        name: "date"
+        widget: "datetime"
